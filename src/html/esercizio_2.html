@@ -9,8 +9,63 @@
 		<script src="../js/esercizio_2.js" defer></script>
 	</head>
 	<body>
-		<h1>Crea una scacchiera (8x8), alternando quadrati bianchi e neri</h1>
+		<h1>Create a chessboard (8x8), alternating black and white squares</h1>
 
 		<div id="scacchiera"></div>
+
+		<div class="editor">
+			<div class="editor-container">
+				<div class="editor-header">
+						<div class="buttons">
+								<div class="button close"></div>
+								<div class="button minimize"></div>
+								<div class="button maximize"></div>
+						</div>
+						<span>javascript.js</span>
+				</div>
+				<div class="editor-content" contenteditable="false">
+const scacchieraTag = document.getElementById("scacchiera");
+const whiteDiv = "div class='white'>/div>";
+const blackDiv = "div class='black'>/div>";
+					
+for (let j = 0; j < 8; j++) {
+	if (j % 2 == 0) {
+		riga1();
+	} else {
+		riga2();
+	}
+}
+					
+function riga1() {
+	for (let i = 0; i < 8; i++) {
+		if (i % 2 == 0) {
+			white();
+		} else {
+			black();
+		}
+	}
+}
+					
+function riga2() {
+	for (let i = 0; i < 8; i++) {
+		if (i % 2 == 0) {
+			black();
+		} else {
+			white();
+		}
+	}
+}
+					
+function white() {
+	scacchieraTag.innerHTML += whiteDiv;
+}
+					
+function black() {
+	scacchieraTag.innerHTML += blackDiv;
+}
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>

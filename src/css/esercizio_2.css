@@ -7,14 +7,17 @@
 
 body {
 	margin: 0;
+	position: relative;
 }
 
 h1 {
-	margin: 0;
-	padding: 25px;
-	background-color: #f3a002;
-	color: #fff;
-	text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 3em;
+  text-align: center;
+	text-wrap: balance;
+  background-color: #F4C403;
+  color: #000;
 }
 
 #scacchiera {
@@ -40,4 +43,59 @@ h1 {
 	height: 80px;
 	background-color: #fff;
 	border: 1px solid #000;
+}
+
+.editor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0;
+}
+
+.editor-container{
+  width: 80%;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.editor-header{
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.editor-header span{
+  margin-left: 10px;
+}
+.editor-header .buttons{
+  display: flex;
+  margin-right: 25%;
+}
+.editor-header .button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.button.close{
+  background-color: #ff5f56;
+}
+.button.minimize{
+  background-color: #ffbd2e;
+}
+.button.maximize{
+  background-color: #27c93f;
+}
+.editor-content{
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre;
 }
