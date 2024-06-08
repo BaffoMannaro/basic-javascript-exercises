@@ -12,7 +12,7 @@ cpuCard.style.backgroundImage = "url(../../assets/img/retroCard.webp)";
 youCard.style.boxShadow = "0 0 15px black";
 cpuCard.style.boxShadow = "0 0 15px black";
 
-messTag.innerHTML = "Clicca il pulsante per giocare...";
+
 
 buttonTag.addEventListener("click", game);
     function game() {
@@ -65,7 +65,7 @@ buttonTag.addEventListener("click", game);
 
         if (youNewNum > cpuNewNum) {
             messTag.style.color = "#4EB711";
-            messTag.innerHTML = "Complimenti! <br> Hai vinto!";
+            messTag.innerHTML = "Congratulations, you win!";
             youCard.style.outline = "10px solid #4EB711";
             youCard.style.opacity = "100%";
             cpuCard.style.outline = "0";
@@ -73,7 +73,7 @@ buttonTag.addEventListener("click", game);
             borderTag.style.borderColor = "#4EB711";
         } else if (youNewNum < cpuNewNum) {
             messTag.style.color = "red";
-            messTag.innerHTML = "Ritenta! <br> Sarai più fortunato!";
+            messTag.innerHTML = "Try again! You will be luckier!";
             youCard.style.outline = "0";
             youCard.style.opacity = "50%";
             cpuCard.style.outline = "10px solid red";
@@ -81,7 +81,7 @@ buttonTag.addEventListener("click", game);
             borderTag.style.borderColor = "red";
         } else {
             messTag.style.color = "#c6c6c6";
-            messTag.innerHTML = "Parità! <br> Sai come si dice... Mal comune, mezzo gaudio";
+            messTag.innerHTML = "Draws! <br> You know... Misery loves company";
             youCard.style.outline = "10px solid #c6c6c6";
             youCard.style.opacity = "50%";
             cpuCard.style.outline = "10px solid #c6c6c6";

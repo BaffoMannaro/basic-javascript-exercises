@@ -6,6 +6,7 @@
 body{
     margin:0;
     background-color: #222;
+    overflow: hidden;
 }
 
 h1{
@@ -13,6 +14,28 @@ h1{
     text-align: center;
     color: #dced17;
     font-size: 3em;
+}
+
+#back{
+    background-color: #F4C403;
+    height: 4em;
+    width: 30%;
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    line-height: 4em;
+}
+  
+#back:hover{
+    color: #F4C403;
+    background-color: black;
 }
 
 h2{
@@ -24,9 +47,10 @@ h2{
 
 main{
     max-width: 900px;
-    border: double 8px #dced17;
+    border: 3px solid #dced17;
+    border-radius: 20px;
     min-height: 500px;
-    margin: 40px auto;
+    margin: 5vh auto;
     padding: 30px;
     background-image: url(../../assets/img/background.webp);
     background-size: cover;
@@ -71,6 +95,7 @@ main section{
     background: #dced17;
     color:#222;
     border:solid 3px #dced17;
+    border-radius: 15px;
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 7px 15px;
@@ -85,5 +110,4 @@ main section{
 #gioca:hover{
     background: transparent;
     color:#dced17;
-    border-radius: 5px;
 }
