@@ -33,7 +33,7 @@ buttonTag.addEventListener("click",setup);
         youTag.style.backgroundSize = "contain";
         youTag.style.backgroundPosition = "center";
         youTag.style.backgroundSize = "35%";
-        buttonTag.innerHTML = 'scegli la tua "arma"'
+        buttonTag.innerHTML = 'Choose your "weapon"'
         buttonTag.style.opacity = "1";
         cpuTag.style.outline = "none";
         cpuTag.style.opacity = "1";
@@ -56,34 +56,31 @@ sassoTag.addEventListener("click", game);
             cpuTag.style.backgroundImage = "url(../../assets/img/foglia.png)";
 
                 if (event.target.id == "foglia") {
-                    risultatoTag.innerHTML = "Pareggio";
+                    risultatoTag.innerHTML = "Draw";
                     risultatoTag.classList.add("patta");
                     risultatoTag.style.backgroundColor = "#808080";
                     risultatoTag.style.color = "#fff";
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 } else if (event.target.id == "forbice") {
-                    risultatoTag.innerHTML = "Hai vinto!";
+                    risultatoTag.innerHTML = "You win!";
                     risultatoTag.classList.add("vinta");
                     risultatoTag.style.backgroundColor = "#E7411E";
                     risultatoTag.style.color = "#fff";
                     youTag.style.outline = " 15px solid #E7411E";
                     cpuTag.style.opacity = ".5";
                     punteggioYouTag.innerHTML = Number(punteggioYouTag.innerHTML) +1;
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 } else {
-                    risultatoTag.innerHTML = "Hai perso...";
+                    risultatoTag.innerHTML = "You lose...";
                     risultatoTag.classList.add("persa");
                     risultatoTag.style.backgroundColor = "#036C59";
                     risultatoTag.style.color = "#fff";
                     cpuTag.style.outline = " 15px solid #036C59";
                     youTag.style.opacity = ".5";
                     punteggioCpuTag.innerHTML = Number(punteggioCpuTag.innerHTML) +1;
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 }
 
@@ -93,68 +90,62 @@ sassoTag.addEventListener("click", game);
             cpuTag.style.backgroundImage = "url(../../assets/img/forbice.png)";
 
                 if (event.target.id == "foglia") {
-                    risultatoTag.innerHTML = "Hai perso...";
+                    risultatoTag.innerHTML = "You lose...";
                     risultatoTag.classList.add("persa");
                     risultatoTag.style.backgroundColor = "#036C59";
                     risultatoTag.style.color = "#fff";
                     cpuTag.style.outline = " 15px solid #036C59";
                     youTag.style.opacity = ".5";
                     punteggioCpuTag.innerHTML = Number(punteggioCpuTag.innerHTML) +1;
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 } else if (event.target.id == "forbice") {
-                    risultatoTag.innerHTML = "Pareggio";
+                    risultatoTag.innerHTML = "Draw";
                     risultatoTag.classList.add("patta");
                     risultatoTag.style.backgroundColor = "#808080";
                     risultatoTag.style.color = "#fff";
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 } else {
-                    risultatoTag.innerHTML = "Hai vinto!";
+                    risultatoTag.innerHTML = "You win!";
                     risultatoTag.classList.add("vinta");
                     risultatoTag.style.backgroundColor = "#E7411E";
                     risultatoTag.style.color = "#fff";
                     youTag.style.outline = " 15px solid #E7411E";
                     cpuTag.style.opacity = ".5";
                     punteggioYouTag.innerHTML = Number(punteggioYouTag.innerHTML) +1;
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 }
 
             } else {
             cpuTag.style.backgroundImage = "url(../../assets/img/sasso.png)";
                 if (event.target.id == "foglia") {
-                    risultatoTag.innerHTML = "Hai vinto!";
+                    risultatoTag.innerHTML = "You win!";
                     risultatoTag.classList.add("vinta");
                     risultatoTag.style.backgroundColor = "#E7411E";
                     risultatoTag.style.color = "#fff";
                     youTag.style.outline = " 15px solid #E7411E";
                     cpuTag.style.opacity = ".5";
                     punteggioYouTag.innerHTML = Number(punteggioYouTag.innerHTML) +1;
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 } else if (event.target.id == "forbice") {
-                    risultatoTag.innerHTML = "Hai perso...";
+                    risultatoTag.innerHTML = "You lose...";
                     risultatoTag.style.backgroundColor = "#036C59";
                     risultatoTag.style.color = "#fff";
                     cpuTag.style.outline = " 15px solid #036C59";
                     youTag.style.opacity = ".5";
                     risultatoTag.classList.add("persa");
                     punteggioCpuTag.innerHTML = Number(punteggioCpuTag.innerHTML) +1;
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 } else {
-                    risultatoTag.innerHTML = "Pareggio";
+                    risultatoTag.innerHTML = "Draw";
                     risultatoTag.classList.add("patta");
                     risultatoTag.style.backgroundColor = "#808080";
                     risultatoTag.style.color = "#fff";
-                    buttonTag.innerHTML = "UN'ALTRA PARTITA?";
-                    buttonTag.style.opacity = ".5";
+                    buttonTag.innerHTML = "ANOTHER MATCH?";
                     roundTag.innerHTML = numRipetizioni + " Round";
                 }
             }
