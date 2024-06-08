@@ -1,0 +1,101 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 3em;
+    text-align: center;
+    color: #000;
+    text-wrap: balance;
+}
+  
+#back{
+    background-color: #F4C403;
+    height: 4em;
+    width: 30%;
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    line-height: 4em;
+}
+  
+#back:hover{
+    color: #F4C403;
+    background-color: black;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-wrap: balance;
+}
+
+h3{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400 ;
+    font-size: 1.1em;
+    color: gray;
+    text-transform: uppercase;
+}
+
+p{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+label{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+input, #reset{
+    cursor: pointer;
+}
+
+div{
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 5px #d9d9d9;
+}
+
+#dolce-vita{
+    height: 95px;
+    overflow: hidden;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+#dolce-vita:hover{
+    background-color: #F4C403;
+    color: black;
+}
+
+#reset{
+    margin-top: 3em;
+}

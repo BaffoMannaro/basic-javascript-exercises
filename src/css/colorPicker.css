@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+header h1 span#i-phone {
+	display: block;
+	width: 200px;
+	margin: 10px auto;
+	border-radius: 20px;
+}
+
+#color-picker {
+	margin: 50px auto;
+	width: 800px;
+	overflow: auto;
+}
+
+#color {
+	width: 50%;
+	margin: 0;
+	padding: 10px;
+	float: left;
+}
+
+#color.sfondo {
+	background-color: #fff;
+}
+
+#color li {
+	float: left;
+	width: 150px;
+	height: 150px;
+	list-style: none;
+	margin: 10px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px #b1b1b1;
+}
+
+#color li a {
+	display: block;
+	width: 150px;
+	height: 100px;
+	border-radius: 20px 20px 0 0;
+	cursor: default;
+}
+
+#color li h3 {
+	margin: 10px 15px;
+	font-size: small;
+	font-weight: 200;
+}
+
+#color-picker section {
+	float: left;
+	width: 50%;
+	height: 534px;
+	position: relative;
+}
+
+section span#notch {
+	display: block;
+	position: absolute;
+	top: 7%;
+	left: 50%;
+	translate: -50% 0;
+	width: 90px;
+	height: 20px;
+	background-color: #151515;
+	border-radius: 20px;
+	z-index: 10;
+}
+
+section span#fascia {
+	display: block;
+	position: absolute;
+	bottom: 7%;
+	left: 50%;
+	translate: -50% 0;
+	width: 100px;
+	height: 4px;
+	background-color: #151515;
+	border-radius: 20px;
+	z-index: 10;
+}
+
+section #mirror {
+	width: 258px;
+	height: 92%;
+	margin: 20px auto;
+	border: 8px solid #151515;
+	outline: 1px solid #8a8a8a;
+	border-radius: 40px;
+	box-shadow: 2px 2px 5px #b1b1b1;
+	position: relative;
+	z-index: 9;
+}
+
+section #mirror img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+}
+
+/* COLORI */
+
+.color-fff {
+	background-color: #fff;
+}
+
+.colore-0 {
+	background-color: #7e2e84;
+}
+
+.colore-1 {
+	background-color: #d14081;
+}
+
+.colore-2 {
+	background-color: #ef798a;
+}
+
+.colore-3 {
+	background-color: #a9f0d1;
+}
+
+.colore-4 {
+	background-color: #ccf5ac;
+}
+
+.colore-5 {
+	background-color: #f9f5e3;
+}
+
+/*BUTTON*/
+
+#button-container {
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 23px;
+	border-radius: 20px;
+	background-color: aliceblue;
+}
+
+button {
+	border-radius: 15px;
+	border: 2px solid #151515;
+	color: #151515;
+	width: 200px;
+	height: 50px;
+	margin: 0 12px;
+	cursor: pointer;
+	background-color: aliceblue;
+	transition: 0.3s;
+	opacity: 0.5;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+.cliccato {
+	background-color: #151515;
+	color: #fff;
+	opacity: 1;
+}
+
+#tog-col.comparsa {
+	color: aliceblue;
+	border: 2px inset;
+}
+
+#tog-col.comparsa:hover {
+	opacity: 0.5;
+	cursor: default;
+}
+
+/*SLIDER*/
+
+#slider {
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	width: 760px;
+	margin: 50px auto;
+	height: calc(760px / 1.7);
+}
+
+#slider img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	transition: 2s;
+	left: -100%;
+}
+
+#slider img.visibile {
+	left: 0;
+}
+
+#slider img.prossima {
+	left: 100%;
+	transition: 0s;
+}
+
+/* SFONDO IMMAGINE */
+
+.set-img {
+	display: none;
+}
+
+.toggle-colori {
+	mix-blend-mode: luminosity;
+}

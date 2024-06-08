@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using variables</title>
+    <link rel="icon" href="assets/img/PixelArt_BM.ico">
+    <link rel="stylesheet" href="../../src/css/variabili.css"/>
+</head>
+<body>
+		<!--Titolo pagina-->
+<h1 id="home">Using variables</h1>
+
+<div class="editor">
+	<div class="editor-container">
+		<div class="editor-header">
+				<div class="buttons">
+						<div class="button close"></div>
+						<div class="button minimize"></div>
+						<div class="button maximize"></div>
+				</div>
+				<span>javascript.js</span>
+		</div>
+		<div class="editor-content" contenteditable="false">
+	var num1;
+	var num2;
+	
+	num1 = 3;
+	num2 = 5;
+	
+	console.log('num1 = ' + num1);
+	console.log('num2 = ' + num2);
+	
+	var num3;
+	
+	num3 = num1;
+	num1 = num2;
+	num2 = num3;
+	
+	console.log('num1 = ' + num1);
+	console.log('num2 = ' + num2);
+		</div>
+	</div>
+</div>
+
+<blockquote>"This exercise swaps the values of two variables (`num1` and `num2`) using a temporary variable (`num3`).<br>Initially, `num1` is 3 and `num2` is 5; after the swap, `num1` becomes 5 and `num2` becomes 3."</blockquote>
+
+<a id="back" href="../../index.html">Home Page</a>
+
+    <script src="../js/variabili.js"></script>
+</body>
+</html>

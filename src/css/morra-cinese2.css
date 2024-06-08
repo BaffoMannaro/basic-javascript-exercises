@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+
+body{
+    text-align: center;
+    background:url(../../assets/img/morraCineseBackground.webp) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Passion One', cursive;
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    width: 800px;
+    top: 10%;
+    left: 50%;
+    translate: -50% 0;
+}
+
+h2{
+    background: #ffffff3b;    
+    color:#002C3A;
+    font-size: 1.6em;
+    padding: 10px 35px;
+    border-radius: 50px;
+    transition: .3s;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    translate: -50%;   
+}
+
+#gioco{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 85%;
+    height: 500px;
+}
+
+#gioco #you{
+    border-radius: 25px;
+    width: 350px;
+    height: 500px;
+    float: left;
+    color:#006200;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50px;
+    position: relative;
+    background-color:rgba(255,255,255,0.5);
+}
+
+#gioco #punteggioYou{
+    position: absolute;
+    left:150px;
+    bottom:10px;
+    background:#e22d00;
+    color:#fff;
+    font-size:1.5em;
+    font-weight: bold;
+    line-height:40px;
+    width: 40px;
+    text-align: center;
+    border-radius:50%;    
+}
+
+#gioco #cpu{
+    border-radius: 25px;
+    width: 350px;
+    height: 500px;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 50px;
+    background-color:rgba(255,255,255,0.5);
+}
+
+#gioco #punteggioCpu{
+    position: absolute;
+    right:150px;
+    bottom:10px;
+    background:#036C59;
+    color:#fff;
+    font-size:1.5em;
+    font-weight: bold;
+    line-height:40px;
+    width: 40px;
+    text-align: center;
+    border-radius:50%;
+}
+
+#gioco #scelta{
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    margin-left: -10px;
+    list-style: none;
+    overflow: auto;
+    display: none;
+}
+
+#gioco #scelta li{
+    width: 130px;
+    height:130px;
+    background-color: #EEE;
+    border-radius:50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    opacity: .8;
+    transition: .4s;
+    padding-left: 50px;
+    margin: 10px auto;
+    opacity: .5;
+}
+
+#gioco #scelta li:hover{
+    opacity: 1;
+    background-color: #E7411E;
+    opacity: 1;
+}
+
+#gioco #scelta li:last-child{
+    float: none;
+    margin: 10px auto;
+}
+
+#gioco #scelta li img{
+    width: 70%;
+    position: absolute;
+    top:15px;
+    left:15%;
+}
+
+span{
+    position: absolute;
+    color:#fff;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    border-radius: 50px;
+    bottom: -15%;
+    width: 100px;
+}
+
+#tag span:first-child{
+    left: 120px;
+    background: #E7411E;    
+    border:solid 4px #E7411E;
+}
+
+#tag span:nth-child(2){
+    right: 120px;
+    background: #036C59;
+    border:solid 4px #036C59;
+}
+
+button{
+    background: #fff;
+    color:#002C3A;
+    font-size: 1.6em;
+    padding: 10px 35px;
+    border:solid 4px #fff;
+    border-radius: 50px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    translate: -50%;   
+}
+
+button:hover{
+    background: #002C3A;    
+    color:#fff;
+}
+
+#risultato{
+    max-width: 300px;
+    margin: 40px auto 0;
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    background-color:#fff;
+    display: none;
+}
+
+#risultato{
+    line-height: 250px;
+    padding: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    translate: -50% 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #002C3A;
+}
+
+#risultato .patta{
+    background-color:#ceb900;
+}
+
+#risultato .persa{
+    color:#e22d00;
+}
+
+#risultato .vinta{
+    color:#1d6600;
+}

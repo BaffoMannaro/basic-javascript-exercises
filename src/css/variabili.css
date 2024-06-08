@@ -1,0 +1,99 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 3em;
+  text-align: center;
+  background-color: #F4C403;
+  color: #000;
+}
+
+#back{
+  background-color: #F4C403;
+  height: 4em;
+  width: 30%;
+  position: absolute;
+  bottom: 2%;
+  left: 35%;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  line-height: 4em;
+}
+
+#back:hover{
+  color: #F4C403;
+  background-color: black;
+}
+
+blockquote{
+  font-family: monospace;
+  max-width: 450px;
+  margin: 3em auto;
+}
+
+.editor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.editor-container{
+  width: 80%;
+  max-width: 500px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.editor-header{
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.editor-header span{
+  margin-left: 10px;
+}
+.editor-header .buttons{
+  display: flex;
+  margin-right: 25%;
+}
+.editor-header .button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.button.close{
+  background-color: #ff5f56;
+}
+.button.minimize{
+  background-color: #ffbd2e;
+}
+.button.maximize{
+  background-color: #27c93f;
+}
+.editor-content{
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre;
+}
