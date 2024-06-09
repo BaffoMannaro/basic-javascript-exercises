@@ -29,40 +29,27 @@ const whiteDiv = "div class='white'>/div>";
 const blackDiv = "div class='black'>/div>";
 					
 for (let j = 0; j < 8; j++) {
-	if (j % 2 == 0) {
-		riga1();
-	} else {
-		riga2();
-	}
+	if (j % 2 == 0) { riga1()	}
+	else { riga2() }
 }
 					
 function riga1() {
 	for (let i = 0; i < 8; i++) {
-		if (i % 2 == 0) {
-			white();
-		} else {
-			black();
-		}
+		if (i % 2 == 0) { white()	}
+		else { black() }
 	}
 }
 					
 function riga2() {
 	for (let i = 0; i < 8; i++) {
-		if (i % 2 == 0) {
-			black();
-		} else {
-			white();
-		}
+		if (i % 2 == 0) {	black() }
+		else { white() }
 	}
 }
 					
-function white() {
-	scacchieraTag.innerHTML += whiteDiv;
-}
+function white() { scacchieraTag.innerHTML += whiteDiv }
 					
-function black() {
-	scacchieraTag.innerHTML += blackDiv;
-}
+function black() { scacchieraTag.innerHTML += blackDiv }
 				</div>
 			</div>
 		</div>
