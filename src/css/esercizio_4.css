@@ -10,11 +10,34 @@ body {
 }
 
 h1 {
-	margin: 0;
-	padding: 25px;
-	background-color: #f3a002;
-	color: #fff;
-	text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 3em;
+  text-align: center;
+	text-wrap: balance;
+  background-color: #F4C403;
+  color: #000;
+}
+
+#back{
+  background-color: #F4C403;
+  height: 4em;
+  width: 30%;
+  position: absolute;
+  bottom: 2%;
+  left: 35%;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  line-height: 4em;
+}
+
+#back:hover{
+  color: #F4C403;
+  background-color: black;
 }
 
 #timer {
@@ -42,11 +65,12 @@ h1 {
 
 button {
 	position: absolute;
-	bottom: 80px;
+	top: 50%;
 	left: 50%;
 	transform: translateX(-50%);
 	padding: 15px 30px;
 	border: solid 2px #000;
+	border-radius: 20px;
 	background: #fff;
 	color: #000;
 	transition: 0.4s;
@@ -57,4 +81,17 @@ button {
 
 button:hover {
 	background-color: #f24d98;
+	color: white;
+	border: solid 2px white;
+}
+
+button.disabled{
+	opacity: 0.5;
+	cursor: auto;
+}
+
+button.disabled:hover{
+	background: #fff;
+	color: #000;
+	border: solid 2px #000;
 }
