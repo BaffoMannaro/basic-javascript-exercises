@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
 	for (let i = 0; i < 6; i++) {
 		aTag[i].classList.add("colore-" + i);
 		nomeColore[i].innerHTML =
-			"Colore<br>" + window.getComputedStyle(aTag[i]).backgroundColor;
+			"Color<br>" + window.getComputedStyle(aTag[i]).backgroundColor;
 	}
 
 	/*seleziono i colori con mouseover e li assegno all'iphone*/
@@ -103,10 +103,10 @@ window.addEventListener("load", function () {
 		/*Modifica il button "Aggiungi una foto"*/
 		togImgTag.classList.toggle("cliccato");
 		togColTag.classList.toggle("comparsa");
-		if (togImgTag.innerHTML === "Aggiungi una foto") {
-			togImgTag.innerHTML = "Rimuovi le foto";
+		if (togImgTag.innerHTML === "Add slider") {
+			togImgTag.innerHTML = "Remove slider";
 		} else {
-			togImgTag.innerHTML = "Aggiungi una foto";
+			togImgTag.innerHTML = "Add slider";
 		}
 
 		/* TOGGLE COLORI  legato al click su "Aggiungi una foto" poichè altrimenti sarebbe inutile*/
@@ -114,10 +114,10 @@ window.addEventListener("load", function () {
 		togColTag.addEventListener("click", function () {
 			imgMirror.classList.toggle("toggle-colori");
 			togColTag.classList.toggle("cliccato");
-			if (togColTag.innerHTML === "Mixa le foto con i colori") {
-				togColTag.innerHTML = "Ripristina il colore originale";
+			if (togColTag.innerHTML === "Mixing slider with colours") {
+				togColTag.innerHTML = "Restore original colour";
 			} else {
-				togColTag.innerHTML = "Mixa le foto con i colori";
+				togColTag.innerHTML = "Mixing slider with colours";
 			}
 
 			togImgTag.addEventListener("click", function () {
