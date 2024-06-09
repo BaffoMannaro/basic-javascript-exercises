@@ -1,8 +1,3 @@
-/*
-Usa l'array per gestire i colori in modo random.
-Completa e usa le due funzioni già presenti nel codice
-*/
-
 const buttonColor = document.getElementById("colora");
 const buttonInvert = document.getElementById("inverti");
 const risultatoTag = document.getElementById("risultato");
@@ -27,6 +22,7 @@ function coloraStringa() {
 }
 
 function invertiStringa() {
+	let risultato = risultatoTag.innerHTML;  // Aggiorna la stringa attuale
 	let stringaInvertita = "";
 	for (i = risultato.length - 1; i >= 0; i--) {
 		stringaInvertita = stringaInvertita + risultato[i];
